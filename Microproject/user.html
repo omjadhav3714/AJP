@@ -1,0 +1,48 @@
+<html lang="en" dir="ltr">
+<head>
+	<title>User</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href = "main.css">
+  	<link rel="stylesheet" type = "text/css" href = "admin.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<div>
+	<nav>
+		<label class="h">Online Survey System</label>
+		<ul>
+		<li><a href="index.html" >Home</a></li>
+		<li><a href="admin.html">Admin</a></li>
+		<li><a href="user.html">User</a></li>
+		<li><a href="contactus.html">Contact us</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+	</ul>
+	</nav>
+</div>
+<div class="image">
+	<img src="survey.jpg">
+	<div class="admin">
+	<label class="l1">User Name : </label>
+	<input type="text" id="username" placeholder="Enter Your Name " class="input"><br><br>
+	<label class="l1">Email Id : </label>
+	<input type="email" id="usermail" style="margin-left: 30px;"placeholder="Enter Mail Id" class="input"><br><br>
+	<button class="b1" onclick="sucess()">Submit</button><br><br><br>
+	
+</div>
+<p id="p1" style="margin-left: 100px;font-size: 25px; font-weight: bold;"></p>
+<div class="admincontrol" id="admincontrol" style="margin-top: 25px;">
+	<a href="survey.html">Click to Start Survey </a><br><br>
+</div>
+</div>
+
+
+<script type="text/javascript">
+	function sucess(){
+		var a = document.getElementById("username").value;
+		document.getElementById("p1").innerHTML = "Welcome" + " " + a ;
+		document.getElementById("admincontrol").style.visibility = "visible";
+	}
+</script>
+</body>
+</html>

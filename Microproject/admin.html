@@ -1,0 +1,54 @@
+<html lang="en" dir="ltr">
+<head>
+	<title>Admin</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href = "main.css">
+  	<link rel="stylesheet" type = "text/css" href = "admin.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<div>
+	<nav>
+		<label class="h">Online Survey System</label>
+		<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="admin.html">Admin</a></li>
+		<li><a href="user.html">User</a></li>
+		<li><a href="contactus.html">Contact us</a></li>
+		<li><a href="feedback.html">Feedback</a></li>
+	</ul>
+	</nav>
+</div>
+<div class="image">
+	<img src="survey.jpg">
+	<div class="admin">
+	<label class="l1">User Name : </label>
+	<input type="text" id="adminname" placeholder="Enter User Name " class="input"><br><br>
+	<label class="l1">Password : </label>
+	<input type="password" id="adminpass" style="margin-left: 12px;"placeholder="Enter password" class="input"><br><br>
+	<button class="b1" onclick="sucess()">Submit</button><br><br><br>
+	
+</div>
+<div class="admincontrol" id="admincontrol">
+	<a href="#">Click to View results</a><br><br>
+	<a href="addquestion.html">Click to Add Questions </a><br><br>
+</div>
+</div>
+
+
+<script type="text/javascript">
+	function sucess(){
+		var a = document.getElementById("adminname").value;
+		var b = document.getElementById("adminpass").value;
+		var c = 'admin';
+		if (a==c && b==c) {
+			document.getElementById("admincontrol").style.visibility = "visible";
+		}
+		else{
+			document.write("Your are not allowed ");
+		}
+	}
+</script>
+</body>
+</html>

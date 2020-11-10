@@ -1,0 +1,42 @@
+
+.input{
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  font-weight: 200;
+  font-family: 'Poppins', sans-serif;
+}
+button{
+  padding-left: auto;
+  width: 50px;
+  color: #000000;
+}
+.l1{
+  color: black;
+  font-size: 20px;
+  padding:100px;
+  font-family: 'Poppins', sans-serif;
+}
+.admin{
+  display: block;
+  padding-top: 40px;
+  justify-content: center;
+}
+.b1{
+  margin-left: 100px;
+  height: 30px;
+  font-weight: bold;
+  background-color: lightgreen;
+  width: 80px;
+}
+.b1:hover{
+  background-color: green;
+  color: white;
+}
+.admincontrol{
+  visibility: hidden;
+  margin-left: 100px;
+}
